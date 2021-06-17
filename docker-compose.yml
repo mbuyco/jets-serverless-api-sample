@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  jets_serverless:
+    build: .
+    environment:
+      - AWS_PROFILE=${AWS_PROFILE}
+    volumes:
+      - ./:/app
